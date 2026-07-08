@@ -1,26 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: Arial;
-    background: linear-gradient(135deg,#1e3c72,#2a5298);
-    color: white;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    flex-direction: column;
 }
 
-.container {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+/* Glass container */
+.glass {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
 }
 
-.card {
-    background:white;
-    color:black;
-    padding:30px;
-    border-radius:10px;
+/* Center layout */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Button */
 button {
-    padding:10px;
-    background:#2a5298;
-    color:white;
-    border:none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Dashboard */
+.dashboard {
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Cards grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Stat cards */
+.card {
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Different colors */
+.card1 { background: linear-gradient(45deg, #36d1dc, #5b86e5); }
+.card2 { background: linear-gradient(45deg, #ff9966, #ff5e62); }
+.card3 { background: linear-gradient(45deg, #56ab2f, #a8e063); }
+
+/* Links */
+.links {
+    margin-top: 30px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background: white;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: #000;
+    color: #fff;
 }
