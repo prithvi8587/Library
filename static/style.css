@@ -1,0 +1,26 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    color: white;
+}
+
+.container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card {
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:10px;
+}
+
+button {
+    padding:10px;
+    background:#2a5298;
+    color:white;
+    border:none;
+}
