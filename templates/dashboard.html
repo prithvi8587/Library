@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <div class="header">
+        <h1>📚 Library Dashboard</h1>
+        <p>Manage books and students efficiently</p>
+    </div>
+
+    <div class="cards">
+        <div class="card card1">
+            <h2>{{ total }}</h2>
+            <p>Total Books</p>
+        </div>
+
+        <div class="card card2">
+            <h2>{{ available }}</h2>
+            <p>Available</p>
+        </div>
+
+        <div class="card card3">
+            <h2>{{ issued }}</h2>
+            <p>Issued</p>
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="/add_book">➕ Add Book</a>
+        <a href="/add_student">👤 Add Student</a>
+        <a href="/issue">📤 Issue Book</a>
+        <a href="/return">📥 Return Book</a>
+    </div>
+
+</div>
+
+</body>
+</html>
